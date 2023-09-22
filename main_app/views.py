@@ -25,9 +25,9 @@ class MemeCreate(CreateView):
     model = Meme
     fields = "__all__"
 
-# class MemeUpdate(UpdateView):
-#     model = Meme
-#     fields = '__all__'
+class MemeUpdate(UpdateView):
+    model = Meme
+    fields = '__all__'
 
 # class MemeDelete(DeleteView):
 #     model = Meme

@@ -11,6 +11,9 @@
             <p>Description: {{ meme.description | linebreaks}}</p>
             <p>Is this meme funny?: {{ meme.isFunny }}</p>
         </div>
+        <div>
+            <a href="{% url 'meme_update' meme.id %}">Edit Meme</a>
+        </div>
     </div>
 
 {% endblock %}
