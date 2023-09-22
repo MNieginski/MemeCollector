@@ -4,19 +4,13 @@
 
     <h1>Memes</h1>
 
-{% for meme in memes %}
-
-<a href="/memes/{{ meme.id }}">
     <div>
         <div>
-            <span>{{ meme.title }}</span>
+            <span>{{ cat.name }}</span>
+            <p>Title: {{ meme.title }}</p>
             <p>Description: {{ meme.description | linebreaks}}</p>
             <p>Is this meme funny?: {{ meme.isFunny }}</p>
-            <hr>
         </div>
     </div>
-</a>
-
-{% endfor %}
 
 {% endblock %}
