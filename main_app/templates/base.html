@@ -11,8 +11,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="/about">About</a></li>
-                <li><a href="/memes">Memes</a></li>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'meme_create' %}">Add a Meme</a></li>
+                <li><a href="{% url 'index' %}">Memes</a></li>
             </ul>
         </nav>
     </header>

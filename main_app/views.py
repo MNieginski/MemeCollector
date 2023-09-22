@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Meme
 
 # Create your views here.
@@ -19,3 +20,15 @@ def meme_detail(request, meme_id):
     return render(request, 'memes/detail.html', {
         'meme' : meme
     })
+
+class MemeCreate(CreateView):
+    model = Meme
+    fields = "__all__"
+
+# class MemeUpdate(UpdateView):
+#     model = Meme
+#     fields = '__all__'
+
+# class MemeDelete(DeleteView):
+#     model = Meme
+#     success_url = '/memes'
