@@ -29,6 +29,6 @@ class MemeUpdate(UpdateView):
     model = Meme
     fields = '__all__'
 
-# class MemeDelete(DeleteView):
-#     model = Meme
-#     success_url = '/memes'
+class MemeDelete(DeleteView):
+    model = Meme
+    success_url = '/memes'
